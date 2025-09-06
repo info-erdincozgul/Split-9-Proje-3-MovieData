@@ -5,7 +5,10 @@ import MovieFooter from './MovieFooter';
 import FavoriteMovieList from './FavoriteMovieList';
 
 const MovieList = (props) => {
-  const { movies, favoriteMovies } = props;
+  const { movies, favoriteMovies, putLoading } = props;
+  if (putLoading) {
+    return <div>Loading...</div>
+  }
 
   return (
     <div className="flex-1">
