@@ -96,7 +96,7 @@ const App = (props) => {
               />
             </Route>
             <Route path="/movies">
-              <MovieList movies={movies} />
+              <MovieList movies={movies} putLoading={putLoading} />
             </Route>
             <Route path="/">
               <Redirect to="/movies" />
